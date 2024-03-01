@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/level', [\App\Http\Controllers\LevelController::class, 'index']);
+Route::get('/kategori', [\App\Http\Controllers\KategoriController::class, 'index']);
+Route::get('/user', [\App\Http\Controllers\UserController::class, 'index']);
