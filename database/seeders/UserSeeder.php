@@ -14,29 +14,20 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        $data = [
-            [
-                'user_id' => 1,
-                'level_id' => 1,
-                'username' => 'admin',
-                'nama' => 'Administrator',
+        $numbers = 3;
+        $username = ['admin', 'manager', 'staff'];
+        $nama = ['Administrator', 'Manager', 'Staff / Kasir'];
+        $data = [];
+
+        for ($i = 0; $i < $numbers; $i++) {
+            $data[] = [
+                'user_id' => $numbers + 1,
+                'level_id' => $numbers + 1,
+                'username' => $username[$i],
+                'nama' => $nama[$i],
                 'password' => Hash::make('12345'),
-            ],
-            [
-                'user_id' => 2,
-                'level_id' => 2,
-                'username' => 'manager',
-                'nama' => 'Manager',
-                'password' => Hash::make('12345'),
-            ],
-            [
-                'user_id' => 3,
-                'level_id' => 3,
-                'username' => 'staff',
-                'nama' => 'Staff/Kasir',
-                'password' => Hash::make('12345'),
-            ],
-        ];
+            ];
+        }
         DB::table('m_user')->insert($data);
     }
 }
