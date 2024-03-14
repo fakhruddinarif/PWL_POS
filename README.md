@@ -60,6 +60,11 @@ Nilai null dikarenakan data telah tidak ada yang dirubah jadi bernilai false
 Bernilai true dikarenakan terdapat username yang telah dirubah meskipun telah disimpan ke database perbaruannya
 
 ## Praktikum 2.6 - CRUD
+Pada section ini terdapat sebuah button nantinya akan dapat menambahkan data dan ada tautan untuk update dan delete data
+
+## Praktikum 2.7 - Relationships
+<img src="./public/screenshots/Praktikum2-18.png">
+Pada langkah ini akan ditampilkan hubungan one to one antara UserModel dengan Model Level menggunakan dd(dump and die). Terdapat 11 item yang menunjukkan hubungan kedua model.
 
 [//]: # (# Jobsheet 3: Migration, Seeder, DB Facade, Query Builder, dan Eloquent ORM)
 
