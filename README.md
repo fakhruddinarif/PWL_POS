@@ -1,70 +1,139 @@
-# Jobsheet 4: Model dan Eloquent Orm
+# Jobsheet 5: Blade View, Web Templating, Datatables
 > Nama  : Muhammad Fakhruddin Arif
 >
 > Kelas : TI-2F
 >
 > Nomor : 21
 
-## Praktikum 1 - $fillable
+## Tugas Praktikum
+1. Tambahkan button Add di halam manage kategori, yang mengarah ke create kategori baru
 
-<img src="./public/screenshots/Praktikum1-01.png">
-Yang terjadi yaitu penambahan data berhasil karena value pada fillable dipenuhi
+<img src="./public/screenshots/J5_Tugas1.png">
 
-<img src="./public/screenshots/Praktikum1-02.png">
-Yang terjadi yaitu error pada url tersebut dikarenakan key password tidak ada pada fillable
+2. Tambahkan menu untuk halaman manage kategori, di daftar menu navbar
 
-## Praktikum 2.1 - Retrieving Single Models
-<img src="./public/screenshots/Praktikum2-01.png">
-Data yang muncul yaitu hanya user dengan id 1
+<img src="./public/screenshots/J5_Tugas2.png">
 
-<img src="./public/screenshots/Praktikum2-02.png">
-Data yang dihasilkan sama tetapi hanya beda pada penulisan eloquent orm saja
+3. Tambahkan action edit di datatables dan buat halaman edit serta controllernya
 
-<img src="./public/screenshots/Praktikum2-03.png">
-Data yang dihasilkan sama seperti sebelumnya berbeda pada penulisan source code saja
+Form Edit:
+<img src="./public/screenshots/J5_Tugas3_1.png">
 
-<img src="./public/screenshots/Praktikum2-04.png">
-Data yang dihasilkan hanya username dan nama pada user id 1
+Hasil Edit:
+<img src="./public/screenshots/J5_Tugas3_2.png">
 
-<img src="./public/screenshots/Praktikum2-05.png">
-Hasildari ini yaitu not found 404 dikarenakan data tidak lebih dari 20
+4. Tambahkan action delete di datatables serta controllernya
 
-## Praktikum 2.2 - Not Found Exceptions
-<img src="./public/screenshots/Praktikum2-06.png">
-Hasil dari source tersebut yaitu sama hanya berbeda pada syntax saja
+Data Awal:
+<img src="./public/screenshots/J5_Tugas4_1.png">
 
-<img src="./public/screenshots/Praktikum2-07.png">
-Hasilnya yaitu 404 dikarenakan data dengan username "manager9" tidak ada dalam database
+Hasil:
+<img src="./public/screenshots/J5_Tugas4_2.png">
 
-## Praktikum 2.3 - Retrieving Aggregrates
-<img src="./public/screenshots/Praktikum2-09.png">
-Hasil yang dihasilkan yaitu angka 2 yaitu hasil dari count tersebut dan tidak menampilkan page
+[//]: # (# Jobsheet 4: Model dan Eloquent Orm)
+[//]: # (## Praktikum 1 - $fillable)
 
-<img src="./public/screenshots/Praktikum2-08.png">
+[//]: # ()
+[//]: # (<img src="./public/screenshots/Praktikum1-01.png">)
 
-## Praktikum 2.4 - Retreiving or Creating Models
-<img src="./public/screenshots/Praktikum2-10.png">
-Jika terdapat data maka tidak akan membuat data tersebut
-<img src="./public/screenshots/Praktikum2-11.png">
-Kemudian ini hasil ketika data tersebut tidak ada
-<img src="./public/screenshots/Praktikum2-12.png">
-Ketika tidak ada data maka akan membuat objek baru tetapi tidak disimpan ke database
-<img src="./public/screenshots/Praktikum2-13.png">
-Dan ini hasilnya ketika disave
+[//]: # (Yang terjadi yaitu penambahan data berhasil karena value pada fillable dipenuhi)
 
-## Praktikum 2.5 - Attribute Changes
-<img src="./public/screenshots/Praktikum2-14.png">
-Nilai null dikarenakan data telah tidak ada yang dirubah jadi bernilai false
+[//]: # ()
+[//]: # (<img src="./public/screenshots/Praktikum1-02.png">)
 
-<img src="./public/screenshots/Praktikum2-15.png">
-Bernilai true dikarenakan terdapat username yang telah dirubah meskipun telah disimpan ke database perbaruannya
+[//]: # (Yang terjadi yaitu error pada url tersebut dikarenakan key password tidak ada pada fillable)
 
-## Praktikum 2.6 - CRUD
-Pada section ini terdapat sebuah button nantinya akan dapat menambahkan data dan ada tautan untuk update dan delete data
+[//]: # ()
+[//]: # (## Praktikum 2.1 - Retrieving Single Models)
 
-## Praktikum 2.7 - Relationships
-<img src="./public/screenshots/Praktikum2-18.png">
-Pada langkah ini akan ditampilkan hubungan one to one antara UserModel dengan Model Level menggunakan dd(dump and die). Terdapat 11 item yang menunjukkan hubungan kedua model.
+[//]: # (<img src="./public/screenshots/Praktikum2-01.png">)
+
+[//]: # (Data yang muncul yaitu hanya user dengan id 1)
+
+[//]: # ()
+[//]: # (<img src="./public/screenshots/Praktikum2-02.png">)
+
+[//]: # (Data yang dihasilkan sama tetapi hanya beda pada penulisan eloquent orm saja)
+
+[//]: # ()
+[//]: # (<img src="./public/screenshots/Praktikum2-03.png">)
+
+[//]: # (Data yang dihasilkan sama seperti sebelumnya berbeda pada penulisan source code saja)
+
+[//]: # ()
+[//]: # (<img src="./public/screenshots/Praktikum2-04.png">)
+
+[//]: # (Data yang dihasilkan hanya username dan nama pada user id 1)
+
+[//]: # ()
+[//]: # (<img src="./public/screenshots/Praktikum2-05.png">)
+
+[//]: # (Hasildari ini yaitu not found 404 dikarenakan data tidak lebih dari 20)
+
+[//]: # ()
+[//]: # (## Praktikum 2.2 - Not Found Exceptions)
+
+[//]: # (<img src="./public/screenshots/Praktikum2-06.png">)
+
+[//]: # (Hasil dari source tersebut yaitu sama hanya berbeda pada syntax saja)
+
+[//]: # ()
+[//]: # (<img src="./public/screenshots/Praktikum2-07.png">)
+
+[//]: # (Hasilnya yaitu 404 dikarenakan data dengan username "manager9" tidak ada dalam database)
+
+[//]: # ()
+[//]: # (## Praktikum 2.3 - Retrieving Aggregrates)
+
+[//]: # (<img src="./public/screenshots/Praktikum2-09.png">)
+
+[//]: # (Hasil yang dihasilkan yaitu angka 2 yaitu hasil dari count tersebut dan tidak menampilkan page)
+
+[//]: # ()
+[//]: # (<img src="./public/screenshots/Praktikum2-08.png">)
+
+[//]: # ()
+[//]: # (## Praktikum 2.4 - Retreiving or Creating Models)
+
+[//]: # (<img src="./public/screenshots/Praktikum2-10.png">)
+
+[//]: # (Jika terdapat data maka tidak akan membuat data tersebut)
+
+[//]: # (<img src="./public/screenshots/Praktikum2-11.png">)
+
+[//]: # (Kemudian ini hasil ketika data tersebut tidak ada)
+
+[//]: # (<img src="./public/screenshots/Praktikum2-12.png">)
+
+[//]: # (Ketika tidak ada data maka akan membuat objek baru tetapi tidak disimpan ke database)
+
+[//]: # (<img src="./public/screenshots/Praktikum2-13.png">)
+
+[//]: # (Dan ini hasilnya ketika disave)
+
+[//]: # ()
+[//]: # (## Praktikum 2.5 - Attribute Changes)
+
+[//]: # (<img src="./public/screenshots/Praktikum2-14.png">)
+
+[//]: # (Nilai null dikarenakan data telah tidak ada yang dirubah jadi bernilai false)
+
+[//]: # ()
+[//]: # (<img src="./public/screenshots/Praktikum2-15.png">)
+
+[//]: # (Bernilai true dikarenakan terdapat username yang telah dirubah meskipun telah disimpan ke database perbaruannya)
+
+[//]: # ()
+[//]: # (## Praktikum 2.6 - CRUD)
+
+[//]: # (Pada section ini terdapat sebuah button nantinya akan dapat menambahkan data dan ada tautan untuk update dan delete data)
+
+[//]: # ()
+[//]: # (## Praktikum 2.7 - Relationships)
+
+[//]: # (<img src="./public/screenshots/Praktikum2-18.png">)
+
+[//]: # (Pada langkah ini akan ditampilkan hubungan one to one antara UserModel dengan Model Level menggunakan dd&#40;dump and die&#41;. Terdapat 11 item yang menunjukkan hubungan kedua model.)
 
 [//]: # (# Jobsheet 3: Migration, Seeder, DB Facade, Query Builder, dan Eloquent ORM)
 

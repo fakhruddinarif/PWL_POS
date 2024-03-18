@@ -13,7 +13,7 @@ class KategoriSeeder extends Seeder
      */
     public function run(): void
     {
-        $numbers = 5;
+        /*$numbers = 5;
         $kode = ['ELEK', 'PAKAI', 'MAKMIN', 'ATK', 'PERHIAS'];
         $nama = ['Elektronik', 'Pakaian', 'Makanan dan Minuman', 'Alat Tulis Kantor', 'Perhiasan'];
         $data = [];
@@ -24,7 +24,21 @@ class KategoriSeeder extends Seeder
                 'kategori_kode' => $kode[$i],
                 'kategori_nama' => $nama[$i],
             ];
-        }
+        }*/
+        $data = [
+            [
+                'kategori_id' => 6,
+                'kategori_kode' => 'CML',
+                'kategori_nama' => 'Cemilan',
+                'created_at' => now()
+            ],
+            [
+                'kategori_id' => 7,
+                'kategori_kode' => 'MNR',
+                'kategori_nama' => 'Minuman Ringan',
+                'created_at' => now()
+            ],
+        ];
         DB::table('m_kategori')->insert($data);
     }
 }
